@@ -1,0 +1,119 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path" : "pages/index/demo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "Demo"
+			}
+		},
+		{
+			"path" : "pages/user/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录"
+			}
+		},
+		{
+			"path" : "pages/user/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "注册"
+			}
+		},
+		{
+			"path" : "pages/type/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "分类",
+				// 开启下拉刷新
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					// 导航栏设置
+					"titleNView": {
+						// 自定义按钮
+						"buttons": [
+							{
+								"text": "添加",
+								"fontSize": "17px",
+								"fontWeight": "bold"
+							}
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/type/add",
+			"style" : 
+			{
+				"navigationBarTitleText" : "添加分类"
+			}
+		},
+		{
+			"path" : "pages/type/edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : "编辑"
+			}
+		},
+		{
+			"path" : "pages/user/profile",
+			"style" : 
+			{
+				"navigationBarTitleText" : "个人资料"
+			}
+		},
+		{
+			"path" : "pages/user/avatar",
+			"style" : 
+			{
+				"navigationBarTitleText" : "修改头像"
+			}
+		},
+		{
+			"path" : "pages/user/mod",
+			"style" : 
+			{
+				"navigationBarTitleText" : "修改资料"
+			}
+		},
+		{
+			"path" : "pages/user/password",
+			"style" : 
+			{
+				"navigationBarTitleText" : "修改密码"
+			}
+		}
+	],
+	"tabBar": {
+		// 使用自定义底部导航
+		"custom":true,
+		//使Uniapp原生的底部导航栏不显示
+		"height": "0",
+		"list": [
+			{
+				"pagePath": "pages/user/profile"
+			},
+			{
+				"pagePath": "pages/type/index"
+			},
+			{
+				"pagePath": "pages/index/index"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
